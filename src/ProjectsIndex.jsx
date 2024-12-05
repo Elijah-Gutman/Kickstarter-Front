@@ -1,4 +1,4 @@
-export function ProjectsIndex({ projects }) {
+export function ProjectsIndex({ projects, onShow }) {
   return (
     <div>
       <h1>All Projects ({projects.length} total)</h1>
@@ -34,6 +34,7 @@ export function ProjectsIndex({ projects }) {
               </li>
             ))}
           </ul>
+          <button onClick={() => onShow(project)}>More info</button>
         </div>
       ))}
     </div>
