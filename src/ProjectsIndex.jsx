@@ -5,7 +5,7 @@ export function ProjectsIndex({ projects, onShow }) {
       {projects.map((project) => (
         <div key={project.id} className="project-card">
           <h2>{project.name}</h2>
-          <p>
+          {/* <p>
             <strong>Description:</strong> {project.description}
           </p>
           <p>
@@ -36,7 +36,7 @@ export function ProjectsIndex({ projects, onShow }) {
           </ul>
           <button onClick={() => onShow(project)}>More info</button>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 }
