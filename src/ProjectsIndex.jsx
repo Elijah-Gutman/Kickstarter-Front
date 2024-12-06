@@ -5,20 +5,20 @@ export function ProjectsIndex({ projects, onShow }) {
       {projects.map((project) => (
         <div key={project.id} className="project-card">
           <h2>{project.name}</h2>
-          {/* <p>
+          <p>
             <strong>Description:</strong> {project.description}
           </p>
           <p>
             <strong>Goal Amount:</strong> ${project.goal_amount}
           </p>
           <p>
-            <strong>Category:</strong> {project.category.name}
+            <strong>Category:</strong> {project.name}
           </p>
           <p>
-            <strong>Created By:</strong> {project.user.name} ({project.user.email})
+            <strong>Created By:</strong> {project.name}
           </p>
 
-          <h3>Rewards</h3>
+          {/* <h3>Rewards</h3>
           <ul>
             {project.rewards.map((reward) => (
               <li key={reward.id}>
@@ -34,9 +34,9 @@ export function ProjectsIndex({ projects, onShow }) {
               </li>
             ))}
           </ul>
-          <button onClick={() => onShow(project)}>More info</button>
+          <button onClick={() => onShow(project)}>More info</button> */}
         </div>
-      ))} */}
+      ))}
     </div>
   );
 }
